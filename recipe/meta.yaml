@@ -1,5 +1,5 @@
 {% set name = "pytest-subtests" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 75b6e0e2a71aa641e47c171a09591290b9ad5de47d722687a68d7e887a65b133
+  sha256: 0e48038a83c23c7cf60cde5b2f7d8bd61572c0292a9ca6da1c83ccfc88de38fa
 
 build:
   noarch: python
@@ -25,6 +25,8 @@ requirements:
     - python >=3.4
 
 test:
+  requires:
+    - pytest-xdist >=1.28
   source_files:
     - tests
   commands:
