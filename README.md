@@ -5,7 +5,7 @@ Home: https://github.com/pytest-dev/pytest-subtests
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: unittest subTest() support and subtests fixture
 
