@@ -5,11 +5,9 @@ Home: https://github.com/pytest-dev/pytest-subtests
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-subtests-feedstock/blob/master/LICENSE.txt)
 
 Summary: unittest subTest() support and subtests fixture
-
-
 
 Current build status
 ====================
