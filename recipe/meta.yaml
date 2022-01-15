@@ -1,5 +1,5 @@
 {% set name = "pytest-subtests" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5bd1e4bf0eda4c89a6cd42b0ee28e1d2ca0848de3fd67ad8cdd6d559ed00f120
+  sha256: 3ebd306a8dcf75133f1742f288c82f36426ebcf8a132d4ee89782d20e84fc13a
 
 build:
   noarch: python
@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python >=3.6
     - setuptools
     - setuptools_scm
   run:
-    - pytest >=4.4.0
-    - python >=3.5
+    - pytest >=6.0
+    - python >=3.6
 
 test:
   source_files:
