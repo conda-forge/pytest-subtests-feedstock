@@ -21,7 +21,7 @@ requirements:
     - setuptools
     - setuptools_scm
   run:
-    - pytest >=6.0
+    - pytest >=7.0
     - python >=3.6
 
 test:
