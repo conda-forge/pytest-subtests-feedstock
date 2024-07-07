@@ -1,13 +1,13 @@
 {% set name = "pytest-subtests" %}
-{% set version = "0.12.1" %}
+{% set version = "0.13.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d6605dcb88647e0b7c1889d027f8ef1c17d7a2c60927ebfdc09c7b0d8120476d
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 9e02b9d243c0379b02abf3e0887da122bcb2714b021c3608a37f17ce210adce5
 
 build:
   noarch: python
@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
     - setuptools
     - setuptools_scm
   run:
     - pytest >=7.0
-    - python >=3.6
+    - python >=3.8
     - attrs >=19.2.0
 
 test:
